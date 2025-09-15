@@ -5,8 +5,9 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "nodemon --watch src --ext ts,json --exec ts-node src/server.ts",
-    "start": "nodemon --watch src --ext ts,json --exec ts-node src/server.ts",
+    "start": "node dist/server.js",
     "build": "tsc",
+    "prestart": "npm run build",
     "test": "echo \"No tests configured\" && exit 0"
   },
   "keywords": [
